@@ -7,9 +7,38 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{EF5022B7-74F
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{6A309B63-439D-4774-8F68-D63AA6D8378B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroNetCore.Probes", "src\MicroNetCore.Probes\MicroNetCore.Probes.csproj", "{35D95131-E039-432E-9C41-E579A95939F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroNetCore.Probes.Kubernetes", "src\MicroNetCore.Probes.Kubernetes\MicroNetCore.Probes.Kubernetes.csproj", "{C9EE41FE-3838-418B-B510-3EF06B600753}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroNetCore.Probes.Core", "src\MicroNetCore.Probes.Core\MicroNetCore.Probes.Core.csproj", "{5F43100B-150F-4121-A958-A5079A4A87BC}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{35D95131-E039-432E-9C41-E579A95939F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35D95131-E039-432E-9C41-E579A95939F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35D95131-E039-432E-9C41-E579A95939F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35D95131-E039-432E-9C41-E579A95939F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9EE41FE-3838-418B-B510-3EF06B600753}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9EE41FE-3838-418B-B510-3EF06B600753}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9EE41FE-3838-418B-B510-3EF06B600753}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9EE41FE-3838-418B-B510-3EF06B600753}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F43100B-150F-4121-A958-A5079A4A87BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F43100B-150F-4121-A958-A5079A4A87BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F43100B-150F-4121-A958-A5079A4A87BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F43100B-150F-4121-A958-A5079A4A87BC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{35D95131-E039-432E-9C41-E579A95939F6} = {EF5022B7-74F0-4C68-9C60-54FEE94DC090}
+		{C9EE41FE-3838-418B-B510-3EF06B600753} = {EF5022B7-74F0-4C68-9C60-54FEE94DC090}
+		{5F43100B-150F-4121-A958-A5079A4A87BC} = {EF5022B7-74F0-4C68-9C60-54FEE94DC090}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8E8AD1E7-3429-4D9F-A1E3-A8976EBF315A}
