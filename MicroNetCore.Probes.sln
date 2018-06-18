@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroNetCore.Probes.Kuberne
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroNetCore.Probes.Core", "src\MicroNetCore.Probes.Core\MicroNetCore.Probes.Core.csproj", "{5F43100B-150F-4121-A958-A5079A4A87BC}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{283938FF-BD3D-4A93-97D1-FFD3BB2A8DBA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroNetCore.Probes.Kubernetes.Sample", "samples\MicroNetCore.Probes.Kubernetes.Sample\MicroNetCore.Probes.Kubernetes.Sample.csproj", "{5B63D37D-F76D-44ED-93DA-FC3B1C43A03F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +35,10 @@ Global
 		{5F43100B-150F-4121-A958-A5079A4A87BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F43100B-150F-4121-A958-A5079A4A87BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F43100B-150F-4121-A958-A5079A4A87BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B63D37D-F76D-44ED-93DA-FC3B1C43A03F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B63D37D-F76D-44ED-93DA-FC3B1C43A03F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B63D37D-F76D-44ED-93DA-FC3B1C43A03F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B63D37D-F76D-44ED-93DA-FC3B1C43A03F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -39,6 +47,7 @@ Global
 		{35D95131-E039-432E-9C41-E579A95939F6} = {EF5022B7-74F0-4C68-9C60-54FEE94DC090}
 		{C9EE41FE-3838-418B-B510-3EF06B600753} = {EF5022B7-74F0-4C68-9C60-54FEE94DC090}
 		{5F43100B-150F-4121-A958-A5079A4A87BC} = {EF5022B7-74F0-4C68-9C60-54FEE94DC090}
+		{5B63D37D-F76D-44ED-93DA-FC3B1C43A03F} = {283938FF-BD3D-4A93-97D1-FFD3BB2A8DBA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8E8AD1E7-3429-4D9F-A1E3-A8976EBF315A}
