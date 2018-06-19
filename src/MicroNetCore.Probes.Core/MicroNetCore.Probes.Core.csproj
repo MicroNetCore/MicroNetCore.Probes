@@ -2,11 +2,30 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard1.3</TargetFramework>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <Authors>davidorbelian</Authors>
+    <Company>MicroNetCore</Company>
+    <Product>MicroNetCore</Product>
+    <Description>Core components for adding liveness and readiness probes to ASP.NET Core application</Description>
+    <Copyright>Copyright (c) 2018 MicroNetCore</Copyright>
+    <PackageLicenseUrl>https://raw.githubusercontent.com/MicroNetCore/MicroNetCore.Probes/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/MicroNetCore/MicroNetCore.Probes</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/MicroNetCore/MicroNetCore.Probes</RepositoryUrl>
+    <PackageTags>readiness;liveness;probe;</PackageTags>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\Debug\netstandard1.3\MicroNetCore.Probes.Core.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>bin\Release\netstandard1.3\MicroNetCore.Probes.Core.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="1.1.2" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="1.1.1" />
+    <PackageReference Include="Nerdbank.GitVersioning" Version="2.1.23" />
   </ItemGroup>
 
 </Project>
