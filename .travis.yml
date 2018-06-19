@@ -1,0 +1,26 @@
+language: csharp
+dist: trusty
+sudo: required
+mono: none
+dotnet: 2.0.0
+
+git:
+  depth: false
+  
+env:
+  global:
+    - DOTNET_SKIP_FIRST_TIME_EXPERIENCE=true
+
+before_install:
+  - chmod +x build.sh
+  - chmod +x test.sh
+  - chmod +x deploy.sh
+  
+script:
+  - ./build.sh
+  - ./test.sh
+
+deploy:
+  skip_cleanup: true
+  provider: script
+  script: ./deploy.sh
